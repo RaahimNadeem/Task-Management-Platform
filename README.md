@@ -1,6 +1,6 @@
  # Task Management Platform
 
-![Task Management Platform Screenshot](https://github.com/RaahimNadeem/Task-Management-Platform/assets/114340940/e6cf5d10-e00f-4e8e-8483-b8501aeae8d1)
+<img width="1262" alt="image" src="https://github.com/RaahimNadeem/Task-Management-Platform/assets/114340940/c9652f28-0127-47bd-b6aa-181222cd953a">
 
 This Task Management Platform is a simple, yet powerful tool to keep track of your daily tasks. Built with HTML, CSS, and Vanilla JavaScript, it offers an intuitive and user-friendly interface to add, complete, and delete tasks. Utilizing SQLite3 for data storage, it ensures that all your tasks are persistent and safely stored.
 
