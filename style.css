@@ -110,6 +110,7 @@ form button:hover {
 
 .task {
   margin: 0.5rem;
+  padding-left: 1rem;
   background: white;
   font-size: 1.5rem;
   color: black;
@@ -117,6 +118,7 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .filter-tasks {
@@ -137,9 +139,14 @@ form button:hover {
 }
 
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: rgb(41, 177, 29);
+  margin-left: 5px;
 }
 
+.trash-btn {
+  border-radius: 0 10px 10px 0;
+
+}
 .task-item {
   padding: 0rem 0.5rem;
 }
