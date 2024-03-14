@@ -1,5 +1,6 @@
  # Task Management Platform
-<img width="1264" alt="image" src="https://github.com/RaahimNadeem/Task-Management-Platform/assets/114340940/e6cf5d10-e00f-4e8e-8483-b8501aeae8d1">
+
+![Task Management Platform Screenshot](https://github.com/RaahimNadeem/Task-Management-Platform/assets/114340940/e6cf5d10-e00f-4e8e-8483-b8501aeae8d1)
 
 This Task Management Platform is a simple, yet powerful tool to keep track of your daily tasks. Built with HTML, CSS, and Vanilla JavaScript, it offers an intuitive and user-friendly interface to add, complete, and delete tasks. Utilizing SQLite3 for data storage, it ensures that all your tasks are persistent and safely stored.
 
@@ -12,11 +13,11 @@ This Task Management Platform is a simple, yet powerful tool to keep track of yo
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
-What you need to install the software:
+You will need:
 
 - A modern web browser (e.g., Google Chrome, Mozilla Firefox)
 - SQLite3
@@ -24,30 +25,28 @@ What you need to install the software:
 ### Installation
 
 1. Clone the repository to your local machine:
-   ```sh
-   git clone https://github.com/yourusername/task-management-platform.git
+    ```sh
+    git clone https://github.com/yourusername/task-management-platform.git
+    ```
 
 2. Navigate to the project directory:
-   ```sh
-   cd task-management-platform
+    ```sh
+    cd task-management-platform
+    ```
 
-3. Open the index.html file in your web browser.
-
+3. Open the `index.html` file in your web browser.
 
 ## Usage
+
 To use the Task Management Platform, simply:
 
-Add a Task: Enter the task description in the input field and click the 'Add Task' button.
-Toggle Task Completion: Click on a task to mark it as complete or incomplete.
-Delete a Task: Click the 'Delete' button next to a task to remove it from the list.
-
+1. **Add a Task:** Enter the task description in the input field and click the 'Add Task' button.
+2. **Toggle Task Completion:** Click on a task to mark it as complete or incomplete.
+3. **Delete a Task:** Click the 'Delete' button next to a task to remove it from the list.
 
 ## Built With
-1. HTML - The markup language used
-2. CSS - The style sheet language used
-3. JavaScript - The programming language used
-4. SQLite3 - The database engine used for persistence
 
-
-
- 
+- **HTML** - The markup language used
+- **CSS** - The style sheet language used
+- **JavaScript** - The programming language used
+- **SQLite3** - The database engine used for persistence
