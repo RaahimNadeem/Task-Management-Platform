@@ -1,24 +1,30 @@
+// Importing express, path and body-parser
 const express = require('express');
 const path = require('path');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser'); // bodPayser is important to parse the request body
 const db = require('./database');
 
+// Create a new express application
 const app = express();
+
+// Set the port (3000 is the default port)
 const PORT = 3000;
 
+// Use the body-parser middleware
 app.use(bodyParser.json());
-app.use(express.static(__dirname)); // Serve static files
+app.use(express.static(__dirname)); 
 
-// Serve index.html at the root route
+// Serve the index.html file
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.use(bodyParser.json());
+app.use(bodyParser.json()); 
 
-// API to insert a new task
+// Insert a new task
 app.post('/api/tasks', (req, res) => {
   const { task } = req.body;
+  // Run the SQL query to insert a new task
   db.run('INSERT INTO tasks (task) VALUES (?)', [task], function(err) {
     if (err) {
       console.error(err.message);
@@ -29,8 +35,9 @@ app.post('/api/tasks', (req, res) => {
   });
 });
 
-// API to get all tasks
+// Get all tasks
 app.get('/api/tasks', (req, res) => {
+
   db.all('SELECT * FROM tasks', [], (err, rows) => {
     if (err) {
       console.error(err.message);
@@ -46,7 +53,7 @@ app.listen(PORT, () => {
 });
 
 
-// API to delete a task
+// Delete a task
 app.delete('/api/tasks/:id', (req, res) => {
     const { id } = req.params;
     db.run('DELETE FROM tasks WHERE id = ?', id, function(err) {
